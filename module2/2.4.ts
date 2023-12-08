@@ -16,14 +16,11 @@
         numberOfEmployee: number;
     }
 
-    const user1: User<Company1, { model: string }> = {
-        age: 32,
-        company: {
-            numberOfTeacher: 10,
-            schoolName: "Ghatarchar Secondary School"
-        },
+    const user1: User<Company1> = {
         name: "Nagib Mahfuz Fuad",
-        carModel: { model: "Yamaha" }
+        age: 32,
+        company: { numberOfTeacher: 10, schoolName: "Ghatarchar Secondary School" },
+        carModel: null
     }
 
 
