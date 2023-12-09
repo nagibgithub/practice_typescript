@@ -7,11 +7,9 @@
             this.name = name;
             this.species = spacies;
         };
-
         makeSound() {
             console.log(`${this.name} is making sound.`);
         };
-
     };
 
     class Dog extends Animal {
@@ -64,30 +62,6 @@
     const cat = new Cat("Cutiy", "Cat");
 
     getAnimal(cat);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // 
 }
