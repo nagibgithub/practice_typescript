@@ -38,8 +38,8 @@
 
     const manush: GenericTuple<string, string> = ["Mr. X", "Mr. Y"];
 
-    const UserWithID: GenericTuple<number, { name: string; email: string }> = [
+    const UserWithID: GenericTuple<number, User> = [
         1234,
-        { name: "persian", email: "a@gmail.com" },
+        { age: 22, name: "Nagib" },
     ];
 }
