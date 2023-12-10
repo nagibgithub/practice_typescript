@@ -13,13 +13,22 @@
             this._pin = _pin;
         };
 
-        public addDeposit(amount: number) {
-            this._balance = this._balance + amount;
+        // setter
+        // public addDeposit(amount: number) {
+        //     this._balance = this._balance + amount;
+        // };
+        set addDeposit(amount: number) {
+            this._balance = this._balance + amount
         };
 
-        public getBalance() {
-            return this._balance;
+        // getter
+        // public getBalance() {
+        //     return this._balance;
+        // };
+        get getBalance() {
+            return this._balance
         };
+
     };
 
     // class StudentAccount extends BankAccount {
@@ -29,9 +38,14 @@
     // }
 
     const userAcc1 = new BankAccount(111, "Nagib Mahfuz Fuad", 1000, 111);
-    userAcc1.addDeposit(321);
-    const result = userAcc1.getBalance();
-    console.log(result);
+
+    // userAcc1.addDeposit(321);
+    // const result = userAcc1.getBalance();
+    // console.log(result);
+
+    userAcc1.addDeposit = 500;
+
+    console.log(userAcc1.getBalance);
 
 
 
